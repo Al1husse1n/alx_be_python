@@ -1,4 +1,4 @@
-def perform_operation(num1:float,num2:float,operation:str):
+def perform_operation(num1,num2,operation):
     match operation:
         case "add":
             print(num1 + num2)
@@ -11,6 +11,6 @@ def perform_operation(num1:float,num2:float,operation:str):
                 print("You can't divide a number by zero")
             else:
                 print(num2 / num1)
-                                
+
 
 
