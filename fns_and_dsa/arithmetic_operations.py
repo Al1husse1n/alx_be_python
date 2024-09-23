@@ -7,9 +7,9 @@ def perform_operation(num1, num2, operation):
         case "multiply":
             print(num1 * num2)
         case "divide":
-            if num1 == 0:
-                print("You can't divide a number by zero")
-            else:
+            if num2 == 0:
+                return "You can't divide a number by zero"
+            elif num2 != 0:
                 print(num1 / num2)
 
 
