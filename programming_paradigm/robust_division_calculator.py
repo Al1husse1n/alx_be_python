@@ -1,10 +1,9 @@
 def safe_divide(numerator, denominator):
-    try :
-        print(f'The result of the division is {numerator / denominator}')
+    try:
+        num = float(numerator)
+        denom = float(denominator)
+        print(f'The result of the division is {num / denom}')
     except ZeroDivisionError:
-        print("Error: Cannot divide by zero.") 
-    try :
-        numerator = float(numerator)
-        denominator = float(denominator)
+        print("Error: Cannot divide by zero.")
     except ValueError:
-        print("Error: Please enter numeric values only.")           
+        print("Error: Invalid input. Please enter numeric values.")  
